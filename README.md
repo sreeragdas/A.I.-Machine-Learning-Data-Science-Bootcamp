@@ -1,4 +1,3 @@
-# A.I.-Machine-Learning-Data-Science-Bootcamp
 
 Steps in Machine learning projects
 
@@ -284,4 +283,44 @@ df['col'].unique()	Get unique values in a column
 df['col'].nunique()	Number of unique values
 
 
-![image](https://github.com/user-attachments/assets/c5173f5a-72b0-4df4-bf82-95662c8320a0)
+
+
+
+Intro To Numpy
+a1=np.array([1,2,3])
+1 d array 
+Shape(1,3)
+Name : array , vector
+
+a2=np.array([[1,2,3],[4,5,6]]) 
+More than 1 d
+Name : array , matrix
+Shape(2,3)
+
+a3=np.array([[[1,2,3],[4,5,6],[7,8,9],[10,11,12],[13,14,15],[16,17,18]]])
+
+More than 1 d
+Name : array , matrix
+Shape(2,3,3)
+
+Type and dtype difference 
+Concept	Purpose	Example	Output
+type()	Python object type	type(np.array([1, 2]))	<class 'numpy.ndarray'>
+.dtype	Data type of elements in array	np.array([1, 2]).dtype	Int64
+
+Note: when we use random and run the same different type we will get different value each time so to get the constant value we use 
+# Set random seed to 0
+np.random.seed(0)
+
+
+# Make 'random' numbers
+np.random.randint(10, size=(5, 3))
+
+
+Sometimes, training on large datasets requires a lot of money and GPU resources. To reduce this cost, some columns from the data are removed. This process is known as dimensionality reduction or column removal
+
+
+
+
+
+
