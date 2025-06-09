@@ -319,8 +319,7 @@ np.random.randint(10, size=(5, 3))
 
 Sometimes, training on large datasets requires a lot of money and GPU resources. To reduce this cost, some columns from the data are removed. This process is known as dimensionality reduction or column removal
 
-
-
+An  ensemble is combination of smaller model to try and make better prediction than just a single model
 
 
 
