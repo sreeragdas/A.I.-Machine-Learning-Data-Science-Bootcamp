@@ -1,4 +1,5 @@
 
+
 Steps in Machine learning projects
 
 	1) Data Collection
@@ -148,8 +149,8 @@ How we can overcome Overfitting and underfitting
 	c) Reduce amount of feature
 	d) Train longer
 -Overfitting 
-    a)     Collect more data
-    b)      Try a less advanced mode
+	a)     Collect more data
+	b)      Try a less advanced mode
 
 
 Installation software
@@ -198,8 +199,8 @@ crosstab in pandas is a function used to count the frequency of combinations of 
 import pandas as pd
 
 data = {
-    'Gender': ['Male', 'Female', 'Female', 'Male', 'Female'],
-    'Preference': ['A', 'B', 'A', 'A', 'B']
+	'Gender': ['Male', 'Female', 'Female', 'Male', 'Female'],
+	'Preference': ['A', 'B', 'A', 'A', 'B']
 }
 
 df = pd.DataFrame(data)
@@ -229,8 +230,8 @@ python
 CopyEdit
 import pandas as pd
 data = {
-    'Department': ['Sales', 'Sales', 'HR', 'HR', 'IT'],
-    'Salary': [50000, 60000, 45000, 47000, 70000]
+	'Department': ['Sales', 'Sales', 'HR', 'HR', 'IT'],
+	'Salary': [50000, 60000, 45000, 47000, 70000]
 }
 df = pd.DataFrame(data)
 # Group by Department and calculate average salary
@@ -319,7 +320,8 @@ np.random.randint(10, size=(5, 3))
 
 Sometimes, training on large datasets requires a lot of money and GPU resources. To reduce this cost, some columns from the data are removed. This process is known as dimensionality reduction or column removal
 
-An  ensemble is combination of smaller model to try and make better prediction than just a single model
 
-
+n_estimators=100 means:
+	• The model will build 100 decision trees during training.
+	• The final prediction is based on the majority vote from these 100 trees (for classification tasks).
 
