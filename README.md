@@ -325,3 +325,21 @@ n_estimators=100 means:
 	• The model will build 100 decision trees during training.
 	• The final prediction is based on the majority vote from these 100 trees (for classification tasks).
 
+ Why use cross_val_score?
+When you train a model, you want to make sure it works well on new, unseen data — not just the data it saw during training.
+
+But if you only split your data once (like 80% train, 20% test), your model’s score might depend too much on that specific split.
+
+ cross_val_score helps by:
+Splitting your data into multiple parts (folds)
+
+Training on different parts and testing on the rest, multiple times
+
+Giving you multiple accuracy scores, one from each round
+
+This way, you can:
+
+Check how your model performs across different data splits
+
+Get a more reliable and fair evaluation of your model 
+Example : cv=5
