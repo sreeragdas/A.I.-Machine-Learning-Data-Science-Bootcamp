@@ -321,11 +321,11 @@ np.random.randint(10, size=(5, 3))
 Sometimes, training on large datasets requires a lot of money and GPU resources. To reduce this cost, some columns from the data are removed. This process is known as dimensionality reduction or column removal
 
 
-n_estimators=100 means:
+**n_estimators=100 means:**
 	• The model will build 100 decision trees during training.
 	• The final prediction is based on the majority vote from these 100 trees (for classification tasks).
 
- Why use cross_val_score?
+ **Why use cross_val_score?**
 When you train a model, you want to make sure it works well on new, unseen data — not just the data it saw during training.
 
 But if you only split your data once (like 80% train, 20% test), your model’s score might depend too much on that specific split.
@@ -343,3 +343,53 @@ Check how your model performs across different data splits
 
 Get a more reliable and fair evaluation of your model 
 Example : cv=5
+
+*****************ROC example :*********
+We want to create a machine learning model to predict if someone has a disease.
+
+We tested it on 100 people.
+
+Here's the truth:
+40 people actually have the disease
+
+60 people do not have the disease
+
+🧠 Our model's predictions:
+The model says “Yes” (has disease) or “No” (doesn't have disease).
+
+Let’s fill in the results like a table:
+
+|                       | Model says “Yes” | Model says “No” |
+| --------------------- | ---------------- | --------------- |
+| Actually has disease  | 30 ✅             | 10 ❌            |
+| Actually doesn't have | 15 ❌             | 45 ✅            |
+
+
+Let’s understand each of the 4 boxes:
+✅ 1. True Positive (TP) – 30
+These are people who actually have the disease
+
+And the model correctly said "Yes"
+
+Meaning: Model got it right
+
+❌ 2. False Negative (FN) – 10
+People actually have the disease
+
+But model said "No"
+
+Model made a mistake → it missed the disease
+
+❌ 3. False Positive (FP) – 15
+People who are actually healthy
+
+But model wrongly said "Yes"
+
+Model made a mistake → false alarm
+
+✅ 4. True Negative (TN) – 45
+People who are actually healthy
+
+And model correctly said "No"
+
+Model got it right
