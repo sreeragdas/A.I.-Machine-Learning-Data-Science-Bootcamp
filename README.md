@@ -393,3 +393,13 @@ People who are actually healthy
 And model correctly said "No"
 
 Model got it right
+
+
+************************What is a Confusion Matrix?**************************************
+A confusion matrix is used to evaluate the performance of a classification model. It shows how many predictions were:
+
+|                    | Predicted **Yes** (1) | Predicted **No** (0) |
+| ------------------ | --------------------- | -------------------- |
+| **Actual Yes** (1) | True Positive (TP)    | False Negative (FN)  |
+| **Actual No** (0)  | False Positive (FP)   | True Negative (TN)   |
+
